@@ -6,8 +6,9 @@ import BenefitsSlide from "./slides/BenefitsSlide";
 import MakeTingsCleaner from "./slides/MakeThingsCleaner";
 import States from "./slides/StatesSlide";
 import GroupAndPeer from "./slides/GroupAndPeer";
+import ResponsiveDesign from "./slides/ResponsiveDesign";
 
-const numberOfSlides = 6;
+const numberOfSlides = 7;
 
 const renderSlide = (slide) => {
   switch (slide) {
@@ -23,6 +24,8 @@ const renderSlide = (slide) => {
       return <States />;
     case 6:
       return <GroupAndPeer />;
+    case 7:
+      return <ResponsiveDesign />;
     default:
       return <div>404</div>;
   }
