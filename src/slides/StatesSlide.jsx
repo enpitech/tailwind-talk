@@ -98,8 +98,9 @@ const Exercises = ({ onClick }) => {
       <h1 className="text-4xl font-bold mb-4">Exercises:</h1>
       <ul className="list-disc list-inside space-y-2">
         <li className="text-2xl">Add placeholder style</li>
-        <li className="text-2xl">add valid style</li>
+        <li className="text-2xl">Add valid style</li>
         <li className="text-2xl">Change before/after</li>
+        <li className="text-2xl">Fix the annoying alignment</li>
       </ul>
     </div>
   );
