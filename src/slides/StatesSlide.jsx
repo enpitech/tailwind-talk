@@ -26,6 +26,18 @@ export default function States() {
       ) : (
         <Exercises onClick={() => setShowExercises(false)} />
       )}
+
+      <pre className="text-lg bg-gray-800 text-white rounded-md p-6 my-8">
+        Checkout more{" "}
+        <a
+          href="https://tailwindcss.com/docs/hover-focus-and-other-states#pseudo-classes"
+          target="_blank"
+          rel="noreferrer"
+          className="text-blue-400 underline hover:text-blue-500"
+        >
+          here
+        </a>
+      </pre>
     </div>
   );
 }
