@@ -7,9 +7,16 @@
    - style the button and slide container and share it using components
    - reset using base
    - add to tailwind using utilities
+   - exercise: create a component for the slide container
 
 6. style form with form states - states/pseudo-class/psuedo elements:
+
+   - add placeholder style
+   - exercise add valid style
+   - change before/after
+
 7. style group and peer
+
 8. responsive design - Tailwind Configuration with tailwind.config.js
 9. theme + dark mode - Tailwind's Functions & Directives Using theme() and screen() functions:
 10. features quick look

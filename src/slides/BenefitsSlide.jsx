@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import ItsUgly from '../assets/itsugly.png'
+import { useState } from "react";
+import ItsUgly from "../assets/itsugly.png";
 
 export default function BenefitsSlide() {
-  const [showDetails, setShowDetails] = useState(false)
+  const [showDetails, setShowDetails] = useState(false);
 
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center bg-white shadow-md ">
@@ -31,7 +31,7 @@ export default function BenefitsSlide() {
           onClick={() => setShowDetails(false)}
           className="p-10 bg-gradient-to-r from-blue-400 to-green-400 text-white rounded-md shadow-lg hover:-translate-y-1 hover:scale-110  duration-300"
         >
-          <h1 className="text-3xl font-bold mb-4">Here, we've used:</h1>
+          <h1 className="text-3xl font-bold mb-4">Here, we have used:</h1>
           <ul className="list-disc list-inside space-y-2">
             <li>
               <span className="font-bold">text-2xl:</span> for large text size.
@@ -60,5 +60,5 @@ export default function BenefitsSlide() {
         </div>
       )}
     </div>
-  )
+  );
 }

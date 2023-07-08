@@ -4,8 +4,9 @@ import WelcomeSlide from "./slides/WelcomeSlide";
 import EditorIntegrationSlide from "./slides/EditorIntegrationSlide";
 import BenefitsSlide from "./slides/BenefitsSlide";
 import MakeTingsCleaner from "./slides/MakeThingsCleaner";
+import States from "./slides/StatesSlide";
 
-const numberOfSlides = 4;
+const numberOfSlides = 5;
 
 const renderSlide = (slide) => {
   switch (slide) {
@@ -17,6 +18,8 @@ const renderSlide = (slide) => {
       return <BenefitsSlide />;
     case 4:
       return <MakeTingsCleaner />;
+    case 5:
+      return <States />;
     default:
       return <div>404</div>;
   }
