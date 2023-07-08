@@ -8,8 +8,9 @@ import States from "./slides/StatesSlide";
 import GroupAndPeer from "./slides/GroupAndPeer";
 import ResponsiveDesign from "./slides/ResponsiveDesign";
 import FunctionsDirectives from "./slides/FunctionDirectives";
+import EndSlide from "./slides/EndSlide";
 
-const numberOfSlides = 8;
+const numberOfSlides = 9;
 
 const renderSlide = (slide) => {
   switch (slide) {
@@ -29,6 +30,8 @@ const renderSlide = (slide) => {
       return <ResponsiveDesign />;
     case 8:
       return <FunctionsDirectives />;
+    case 9:
+      return <EndSlide />;
     default:
       return <div>404</div>;
   }
