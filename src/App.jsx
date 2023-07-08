@@ -7,8 +7,9 @@ import MakeTingsCleaner from "./slides/MakeThingsCleaner";
 import States from "./slides/StatesSlide";
 import GroupAndPeer from "./slides/GroupAndPeer";
 import ResponsiveDesign from "./slides/ResponsiveDesign";
+import FunctionsDirectives from "./slides/FunctionDirectives";
 
-const numberOfSlides = 7;
+const numberOfSlides = 8;
 
 const renderSlide = (slide) => {
   switch (slide) {
@@ -26,6 +27,8 @@ const renderSlide = (slide) => {
       return <GroupAndPeer />;
     case 7:
       return <ResponsiveDesign />;
+    case 8:
+      return <FunctionsDirectives />;
     default:
       return <div>404</div>;
   }

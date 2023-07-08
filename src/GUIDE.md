@@ -16,8 +16,8 @@
    - change before/after
 
 7. style group and peer
-
 8. responsive design - Tailwind Configuration with tailwind.config.js
+
 9. theme + dark mode - Tailwind's Functions & Directives Using theme() and screen() functions:
 10. features quick look
     1. transitions
