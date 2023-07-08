@@ -64,14 +64,15 @@ export default function FunctionsDirectives() {
           .
         </div>
         {darkMode ? (
-          <div className="text-left text-2xl bg-black text-white p-4 rounded h-[300px] overflow-scroll ">
+          <div className="text-left text-2xl bg-black text-white p-4 rounded h-[300px] overflow-scroll hide-scrollbar">
             <code>{codeLines}</code>
           </div>
         ) : null}
       </div>
 
       <div className="invisible dark:visible ">
-        Exercise: Hide the scrollbar using layers
+        Exercise: Hide the scrollbar using layers (also check out the invisible
+        logic)
       </div>
       <button
         onClick={toggleDarkMode}
