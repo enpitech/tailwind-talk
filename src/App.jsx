@@ -3,6 +3,7 @@ import "./App.css";
 import WelcomeSlide from "./slides/WelcomeSlide";
 import EditorIntegrationSlide from "./slides/EditorIntegrationSlide";
 import BenefitsSlide from "./slides/BenefitsSlide";
+import MakeTingsCleaner from "./slides/MakeThingsCleaner";
 
 const numberOfSlides = 4;
 
@@ -14,6 +15,8 @@ const renderSlide = (slide) => {
       return <EditorIntegrationSlide />;
     case 3:
       return <BenefitsSlide />;
+    case 4:
+      return <MakeTingsCleaner />;
     default:
       return <div>404</div>;
   }
@@ -44,7 +47,7 @@ function App() {
   return (
     <div className="flex items-center justify-center h-screen ">
       <button
-        className="p-6 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white text-4xl font-bold rounded-full shadow-lg transform hover:scale-110 motion-reduce:transform-none focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition duration-300 ease-in-out"
+        className="btn from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white text-4xl  focus:ring-blue-400 "
         onClick={() => setSlide(slide - 1)}
         disabled={slide === 1}
       >
@@ -52,7 +55,7 @@ function App() {
       </button>
       {renderSlide(slide)}
       <button
-        className="p-6 bg-gradient-to-r from-green-500 to-blue-500 hover:from-blue-500 hover:to-green-500 text-white text-4xl font-bold rounded-full shadow-lg transform hover:scale-110 motion-reduce:transform-none focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75 transition duration-300 ease-in-out"
+        className="btn from-green-500 to-blue-500 hover:from-blue-500 hover:to-green-500 text-white focus:ring-green-400 "
         onClick={() => setSlide(slide + 1)}
         disabled={slide === numberOfSlides}
       >
