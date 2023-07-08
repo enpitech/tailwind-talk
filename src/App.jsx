@@ -5,8 +5,9 @@ import EditorIntegrationSlide from "./slides/EditorIntegrationSlide";
 import BenefitsSlide from "./slides/BenefitsSlide";
 import MakeTingsCleaner from "./slides/MakeThingsCleaner";
 import States from "./slides/StatesSlide";
+import GroupAndPeer from "./slides/GroupAndPeer";
 
-const numberOfSlides = 5;
+const numberOfSlides = 6;
 
 const renderSlide = (slide) => {
   switch (slide) {
@@ -20,6 +21,8 @@ const renderSlide = (slide) => {
       return <MakeTingsCleaner />;
     case 5:
       return <States />;
+    case 6:
+      return <GroupAndPeer />;
     default:
       return <div>404</div>;
   }
@@ -56,7 +59,7 @@ function App() {
       >
         &#x2190; {/* HTML entity for left arrow */}
       </button>
-      {renderSlide(slide)}
+      <div className="min-w-[1200px]">{renderSlide(slide)}</div>
       <button
         className="btn from-green-500 to-blue-500 hover:from-blue-500 hover:to-green-500 text-white focus:ring-green-400 "
         onClick={() => setSlide(slide + 1)}
