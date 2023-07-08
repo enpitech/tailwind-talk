@@ -12,6 +12,17 @@ export default function MakeTingsCleaner() {
   }
 }`}
       </code>
+      <pre className="text-lg bg-gray-800 text-white rounded-md p-6">
+        Checkout more about layers{" "}
+        <a
+          href="https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer"
+          target="_blank"
+          rel="noreferrer"
+          className="text-blue-400 underline hover:text-blue-500"
+        >
+          here
+        </a>
+      </pre>
     </div>
   );
 }
