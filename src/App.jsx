@@ -1,45 +1,45 @@
-import { useCallback, useEffect, useState } from 'react'
-import './App.css'
-import Slide1 from './slides/Slide1'
-import Slide2 from './slides/Slide2'
-import Slide3 from './slides/Slide3'
+import { useCallback, useEffect, useState } from "react";
+import "./App.css";
+import WelcomeSlide from "./slides/WelcomeSlide";
+import EditorIntegrationSlide from "./slides/EditorIntegrationSlide";
+import BenefitsSlide from "./slides/BenefitsSlide";
 
-const numberOfSlides = 3
+const numberOfSlides = 4;
 
 const renderSlide = (slide) => {
   switch (slide) {
     case 1:
-      return <Slide1 />
+      return <WelcomeSlide />;
     case 2:
-      return <Slide2 />
+      return <EditorIntegrationSlide />;
     case 3:
-      return <Slide3 />
+      return <BenefitsSlide />;
     default:
-      return <div>404</div>
+      return <div>404</div>;
   }
-}
+};
 
 function App() {
-  const [slide, setSlide] = useState(1)
+  const [slide, setSlide] = useState(1);
 
   const handleKeyDown = useCallback(
     (e) => {
-      if (e.key === 'ArrowRight') {
-        if (slide === numberOfSlides) return
-        setSlide(slide + 1)
-      } else if (e.key === 'ArrowLeft') {
-        if (slide === 1) return
-        setSlide(slide - 1)
+      if (e.key === "ArrowRight") {
+        if (slide === numberOfSlides) return;
+        setSlide(slide + 1);
+      } else if (e.key === "ArrowLeft") {
+        if (slide === 1) return;
+        setSlide(slide - 1);
       }
     },
-    [slide],
-  )
+    [slide]
+  );
 
   useEffect(() => {
     // bind arrow keys for navigation
-    window.addEventListener('keydown', handleKeyDown)
-    return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [handleKeyDown])
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [handleKeyDown]);
 
   return (
     <div className="flex items-center justify-center h-screen ">
@@ -59,7 +59,7 @@ function App() {
         &#x2192; {/* HTML entity for right arrow */}
       </button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
