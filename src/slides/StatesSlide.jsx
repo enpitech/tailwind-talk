@@ -54,7 +54,7 @@ function Form({ onSubmit }) {
           type="text"
           value="tbone"
           disabled
-          className="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base shadow-sm placeholder-gray-400
+          className="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base shadow-sm placeholder:text-gray-400
           focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500
           disabled:bg-gray-50 disabled:text-gray-500 disabled:border-gray-200 disabled:shadow-none
           invalid:border-pink-500 invalid:text-pink-600
@@ -71,9 +71,9 @@ function Form({ onSubmit }) {
           pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
           required
           placeholder="Enter your email"
-          className="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base shadow-sm placeholder-gray-400
-          focus:outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500
-          invalid:border-red-500 invalid:text-red-600 invalid:ring-red-500
+          className="mt-1 block w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-base shadow-sm placeholder:text-gray-400
+          focus:outline-none focus:border-blue-500 focus:ring-2 focnus:ring-blue-500
+          invalid:border-red-500 invalid:text-red-600 invalid:rig-red-500
         "
         />
       </label>
